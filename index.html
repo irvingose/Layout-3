@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="mx-auto w-3/4 items-center justify-center rounded-xl border border-zinc-500 p-4 shadow-lg"
+    >
+      <p>Projects About Contact</p>
+      <div class="mx-80 w-3/4">
+        <img
+          src="/Layout 3/assets/image.png"
+          class="float-right mx-auto w-80"
+        />
+      </div>
+    </div>
+    <div class="block p-6">
+      <h1 class="my-3 text-4xl"><strong>John Doe</strong> web developer</h1>
+      <h2>I'm a web developer with more than 10 years of experience</h2>
+
+      <button
+        class="align-center m-2 my-8 rounded-xl bg-violet-400 p-3 text-white"
+      >
+        Hire me
+      </button>
+
+      <div class="flex">
+        <div class="m-2 rounded-xl bg-pink-400 p-4 text-white">HTML</div>
+        <div class="m-2 rounded-xl bg-orange-300 p-3 text-white">CSS</div>
+        <div class="m-2 rounded-xl bg-rose-400 p-3 text-white">JAVASCRIPT</div>
+      </div>
+
+      <div class="flex">
+        <h2 class="p-4 py-6 text-2xl"><strong>Latest Technologies</strong></h2>
+        <div>
+          <button
+            type="button"
+            class="my-6 inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+            id="menu-button"
+            aria-expanded="true"
+            aria-haspopup="true"
+          >
+            All
+            <svg
+              class="-mr-1 h-5 w-5 text-gray-400"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+          role="menu"
+          aria-orientation="vertical"
+          aria-labelledby="menu-button"
+          tabindex="-1"
+        >
+          <div class="py-1" role="none">
+            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm text-gray-700"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-0"
+              >Account settings</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm text-gray-700"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-1"
+              >Support</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-sm text-gray-700"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+              >License</a
+            >
+            <form method="POST" action="#" role="none">
+              <button
+                type="submit"
+                class="block w-full px-4 py-2 text-left text-sm text-gray-700"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-3"
+              >
+                Sign out
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="m-4 rounded-xl border border-black p-6 shadow-lg">
+          <h3><strong>Noteworthy Technology Acquisitions 2021</strong></h3>
+          <p class="text-sm">
+            Here are the biggest enterprise technology acquisitions in 2021 so
+            far, in reverse chronological order.
+          </p>
+        </div>
+        <div class="m-4 rounded-xl border border-black p-6 shadow-lg">
+          <h3><strong>Noteworthy Technology Acquisitions 2021</strong></h3>
+          <p class="text-sm">
+            Here are the biggest enterprise technology acquisitions in 2021 so
+            far, in reverse chronological order.
+          </p>
+        </div>
+        <div class="m-4 rounded-xl border border-black p-6 shadow-lg">
+          <h3><strong>Noteworthy Technology Acquisitions 2021</strong></h3>
+          <p class="text-sm">
+            Here are the biggest enterprise technology acquisitions in 2021 so
+            far, in reverse chronological order.
+          </p>
+        </div>
+      </div>
+      <h3 class="text-1xl p-3"><strong>Subscribe to my newsletter</strong></h3>
+      <h4 class="p-3 text-sm">
+        I write about web development, design and other cool stuff.
+      </h4>
+
+      <form class="ml-auto flex max-w-sm items-center">
+        <label for="simple-search" class="sr-only">Search</label>
+        <div class="relative w-full">
+          <input
+            type="text"
+            id="simple-search"
+            class="block w-full border border-gray-300 bg-white p-2.5 ps-10 text-sm text-gray-900"
+            placeholder="Your Email.."
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="focus:ring-white-300 ms-2 rounded-lg border border-violet-700 bg-violet-700 p-2.5 text-sm font-medium text-white hover:bg-violet-800 focus:outline-none focus:ring-4 dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-blue-800"
+        >
+          <svg
+            class="h-4 w-4"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 20 20"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+            />
+          </svg>
+          <span class="sr-only">Search</span>
+        </button>
+      </form>
+
+      <p class="py-6 text-sm">Linkedin GitHub Twitter Instagram</p>
+      <p class="ml-auto flex max-w-sm items-center">© 2024 John Doe</p>
+    </div>
+  </body>
+</html>
